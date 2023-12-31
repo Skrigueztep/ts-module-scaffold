@@ -13,6 +13,9 @@
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
+  "engines": {
+    "node": "17.5.0 || 18.0.0"
+  },
   "license": "private",
   "author": "",
   "devDependencies": {
