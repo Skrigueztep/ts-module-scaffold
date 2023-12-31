@@ -2,19 +2,23 @@
   "name": "ts-module-scaffold",
   "version": "0.0.0",
   "description": "",
-  "main": "dist/ts-module-scaffold/index.js",
+  "main": "dist/index.js",
+  "types": "dist/types",
   "files": [
     "dist/**"
   ],
   "scripts": {
     "build": "tsc",
     "link": "npm run build && npm link --force",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "license": "private",
   "author": "",
   "devDependencies": {
     "@types/node": "^20.5.7",
-    "typescript": "^5.2.2"
+    "@vitest/coverage-v8": "^1.1.1",
+    "typescript": "^5.2.2",
+    "vitest": "^1.1.1"
   }
 }
